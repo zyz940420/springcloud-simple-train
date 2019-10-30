@@ -1,0 +1,17 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: service-zuul-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+zuul:
+  routes:
+    consumer-a:
+      path: /consumer-a/**
+      serviceId: service-ribbon-consumer
+    consumer-b:
+      path: /consumer-b/**
+      serviceId: service-feign-consumer
