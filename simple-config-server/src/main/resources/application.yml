@@ -1,0 +1,16 @@
+server:
+  port: 8767
+spring:
+  application:
+    name: simple-config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ./simple-config-server/profiles
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka

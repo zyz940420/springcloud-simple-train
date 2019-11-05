@@ -9,6 +9,8 @@
         <module>service-ribbon-consumer</module>
         <module>service-feign-consumer</module>
         <module>service-zuul-consumer</module>
+        <module>simple-config-server</module>
+        <module>service-config-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,0 +1,12 @@
+server:
+  port: 8768
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka
+spring:
+  application:
+    name: service-config-client
+env:
+  name: developer
+  password: dev123456
